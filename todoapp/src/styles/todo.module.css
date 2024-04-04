@@ -1,0 +1,7 @@
+/* body {
+    background: linear-gradient(to bottom, #d606ffcb, #dc2ba4);
+} */
+.home{
+    background: linear-gradient(to bottom, #d606ffcb, #dc2ba4);
+    height: 100vh;
+}

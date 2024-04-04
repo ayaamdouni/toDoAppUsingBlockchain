@@ -4,7 +4,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     transition: transform 0.3s, box-shadow 0.3s; /* Transition effect */
     width: 300px;
-    height: 200px;
+    height: 50px;
+    text-align: center;
     padding: 20px;
     margin: 20px;
     position: relative;
@@ -15,30 +16,32 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow size on hover */
   }
   
-  .card-content {
+  .cardContent {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
   
-  .card-title {
+  .cardTitle {
     font-size: 24px;
     margin-bottom: 10px;
   }
   
-  .card-text {
+  .cardText {
     font-size: 18px;
     color: #333;
   }
-  .done-icon-container {
+  .doneIconContainer {
     position: absolute;
     top: 5px;
     right: 5px;
   }
 .cards {
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: 'center';
+    flex-direction: row;
     flex-wrap: wrap; 
     width: '100%'; 
     height: '100%'

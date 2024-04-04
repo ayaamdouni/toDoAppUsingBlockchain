@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/Card.css'; 
+import classes from '../styles/Card.module.css'; 
 import Card from './Card';
 import contract from '../contractInfo/contract';
 
 
 
-const Cards = ({ id, content }) => {
+const Cards = () => {
   const [tasks, setTasks] = useState([]);
 
   const getTasks = async () => {
@@ -28,14 +28,11 @@ const Cards = ({ id, content }) => {
     getTasks();
   },)
   return (
-    <div className='cards'>
+    
+    <div className={`${classes.Cards}`}>
       {tasks.map(task => (
         <Card key={task.id} content={task.content} id={task.id} completed = {task.completed}/>
-      ))}
-      {/* <Card />
-      <Card />
-      <Card />
-      <Card /> */}
+      ))} 
     </div>
   );
 }
